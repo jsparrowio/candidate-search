@@ -78,6 +78,9 @@ tr {
   background-color: #000;
   color: white;
 }
+td {
+  padding: 1rem 2rem;
+}
 
 tbody tr:nth-child(odd) {
   background-color: #333333;
