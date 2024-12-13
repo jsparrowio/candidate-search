@@ -1,7 +1,7 @@
+// search GitHub for a list of potential candidates
 const searchGithub = async () => {
   try {
     const start = Math.floor(Math.random() * 100000000) + 1;
-    // console.log(import.meta.env);
     const response = await fetch(
       `https://api.github.com/users?since=${start}`,
       {
@@ -23,6 +23,7 @@ const searchGithub = async () => {
   }
 };
 
+// once the candidates have been retrieved, get information about a specific candidate
 const searchGithubUser = async (username: string) => {
   try {
     const response = await fetch(`https://api.github.com/users/${username}`, {

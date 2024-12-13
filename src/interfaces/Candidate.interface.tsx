@@ -1,3 +1,4 @@
+// establish a candidate interface that uses properties that will be fed by GitHub API; uses 1 to 1 naming convention
 export default interface Candidate {
     readonly id: number;
     readonly login: string;

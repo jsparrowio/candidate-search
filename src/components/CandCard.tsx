@@ -1,16 +1,21 @@
+// get candidate interface and link module
 import type Candidate from "../interfaces/Candidate.interface";
 import { Link } from 'react-router-dom';
 
+// props for the Candidate Card
 type CandCardProps = {
     cand: Candidate;
     approve: () => void;
     deny: () => void;
 }
 
+// export cand card function, which displays candidate information based on fed Candidate and allows for approval or denial, which main functions exist in other file
 export default function CandCard({ cand, approve, deny }: CandCardProps) {
 
+    // return the candidate card to display on page
     return (
         <div className="cand-card-container">
+            {/* first check if a candidate ID exist */}
             {cand.id ? (
                 <>
                     <div className='cand-card'>
@@ -29,6 +34,7 @@ export default function CandCard({ cand, approve, deny }: CandCardProps) {
                 </>
             )
                 :
+                // if no candidate ID is given, return a message that there are no more candidates and allow user to travel to saved candidates page
                 (
                     <>
                         <div className="cand-card">
