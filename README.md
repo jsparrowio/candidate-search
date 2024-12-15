@@ -6,6 +6,8 @@
   
 This project can be used to find potential coding candidates for any coding projects. It pulls potential candiates from GitHub, puts them on a single card with their avatar and pertinent info, and allows the user to accept (to be reviewed later) or reject the candidate. Then, the user can review all saved candidates to pursue or finally reject. 
 
+Find the deployed application [here](https://candidate-search-xray.onrender.com/)
+
 ## Screenshot
 
 <img src="./src/assets/candsearchss.png" alt="screenshot">
